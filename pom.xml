@@ -10,6 +10,9 @@
 
     <modules>
         <module>authorization-server</module>
+        <module>authorization-independent-server</module>
+        <module>client-diy</module>
+        <module>resource-server</module>
     </modules>
 
 
