@@ -3,14 +3,14 @@ security:
     sso:
       login-path: /login
     client:
-      client-id: client1
-      client-secret: secret1
-      user-authorization-uri: http://127.0.0.1:9000/oauth/authorize
-      access-token-uri: http://127.0.0.1:9000/oauth/token
+      client-id: adminapp
+      client-secret: password
+      user-authorization-uri: http://127.0.0.1:9999/oauth/authorize
+      access-token-uri: http://127.0.0.1:9999/oauth/token
       client-authentication-scheme: form
     resource:
       jwt:
-        key-uri: http://127.0.0.1:9000/oauth/token_key
+        key-uri: http://127.0.0.1:9999/oauth/token_key
 
 server:
   port: 8080
