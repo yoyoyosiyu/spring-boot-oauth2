@@ -37,6 +37,12 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .secret("acmesecret")
                 .authorizedGrantTypes("authorization_code", "refresh_token", "password")
                 .scopes("read", "write")
+                .autoApprove(true)
+            .and()
+                .withClient("client")
+                .secret("clientsecret")
+                .authorizedGrantTypes("authorization_code", "refresh_token", "password")
+                .scopes("read", "write")
                 .autoApprove(true);
     }
 
